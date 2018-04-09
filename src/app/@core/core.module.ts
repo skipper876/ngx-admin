@@ -10,20 +10,18 @@ import { AnalyticsService } from './utils/analytics.service';
 
 const socialLinks = [
   {
-    url: 'https://github.com/akveo/nebular',
-    target: '_blank',
-    icon: 'socicon-github',
-  },
-  {
-    url: 'https://www.facebook.com/akveo/',
-    target: '_blank',
+    name: "facebook",
     icon: 'socicon-facebook',
   },
   {
-    url: 'https://twitter.com/akveo_inc',
+    name: "google",
+    icon: 'socicon-google',
+  },
+  /*{
+    url: 'https://twitter.com/',
     target: '_blank',
     icon: 'socicon-twitter',
-  },
+  },*/
 ];
 
 const NB_CORE_PROVIDERS = [
@@ -31,7 +29,7 @@ const NB_CORE_PROVIDERS = [
   ...NbAuthModule.forRoot({
     providers: {
       email: {
-        service: NbDummyAuthProvider,
+        service: NbDummyAuthProvider, // Not really needed any more
         config: {
           delay: 3000,
           login: {
