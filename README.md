@@ -1,3 +1,5 @@
+# Phil'inspired
+
 # Ngx-Admin from akveo with Firebase (using AngularFire2)
 
 ## Firebase auth with the template of akveo/nebular/auth
